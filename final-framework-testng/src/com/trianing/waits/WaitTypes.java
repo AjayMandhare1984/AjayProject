@@ -61,21 +61,20 @@ public class WaitTypes {
 	
 	
 	
-	public WebElement waitForElement(By locator, int timeout){
-		try{
-			WebDriverWait wait = new WebDriverWait(driver, timeout);
-			WebElement element  = wait.until(
-					ExpectedConditions.visibilityOfElementLocated(locator)
-					);
-			
-			System.out.println("Element Located");
-			
-			return element;
-		}catch(Exception e ){
-			System.out.println("Element Not Located " + e);
-		}
-		return null;
-	}
+	public WebElement waitForElement(WebElement element, int timeout){
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, timeout);
+            element  = wait.until(
+                    ExpectedConditions.visibilityOf(element)
+                    );
+            System.out.println("Element Located");
+            
+            return element;
+        }catch(Exception e ){
+            System.out.println("Element Not Located " + e);
+        }
+        return element;
+    }
 	
 	
 

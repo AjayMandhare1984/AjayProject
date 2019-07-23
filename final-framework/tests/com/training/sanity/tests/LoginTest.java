@@ -15,6 +15,7 @@ import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
+
 public class LoginTest {
 
 
@@ -53,7 +54,8 @@ public class LoginTest {
 			loginPOM.sendPassword("admin@123");
 			loginPOM.clickLoginBtn(); 
 			screenShot.captureScreenShot("First");
-	}
+			
+}
 	
 	
 }
