@@ -6,17 +6,4 @@
       <class name="com.training.sanity.tests.SimpleTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.training.sanity.tests.SimpleTest">
-        <methods>
-          <include name="registrationPassTest"/>
-          <include name="loginPassTest"/>
-          <include name="setUpBeforeClass"/>
-          <include name="setUp"/>
-          <include name="recoverPwdPassTest"/>
-        </methods>
-      </class> <!-- com.training.sanity.tests.SimpleTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

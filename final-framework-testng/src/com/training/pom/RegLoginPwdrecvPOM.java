@@ -6,10 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class RegLoginPwdrecvPOM {
 	private WebDriver driver;
-	
 	
 	public RegLoginPwdrecvPOM (WebDriver driver) {
 		this.driver = driver; 
@@ -85,14 +85,14 @@ public class RegLoginPwdrecvPOM {
 	@FindBy(xpath="//div[@id=\"System_nyHsmShk\"]/align/h2")
 	private WebElement accountscreen;
 	
-	
 	@FindBy(xpath="//div/input[@id=\"input-email\"]")
 	private WebElement emailaddress;
 	
 	@FindBy(xpath="//div[@class=\"alert alert-success\"]")
 	private WebElement pwdrecoversucc;
 	
-	
+	@FindBy(xpath="//div[@class=\"alert alert-danger\"]")
+	private WebElement invalidcredentialswarn;
 	
 	public void accountMenuClick() {
 		this.accountMenu.click();
@@ -187,9 +187,9 @@ public class RegLoginPwdrecvPOM {
 		
 		boolean pass2 =this.continueB.isDisplayed();
 		if(pass1==pass2) {
-			System.out.println("Test Pass");}
+			System.out.println("Registration Sucessfull");}
 		else {
-			System.out.println("Test Fail");}
+			System.out.println("Registration Failed");}
 		}
 	
 	public void sendLoginEmail(String loginEmail) {
@@ -209,14 +209,8 @@ public class RegLoginPwdrecvPOM {
 	
 	public void verifyLoginSuccess() {
 		String accsucc = this.accountscreen.getText().trim();
-		if(accsucc.contains("My Account")) {
-			System.out.println("Test Pass");
-		} 
-		else {
-			System.out.println("Test Fail");
-			}
-		
-	}
+		Assert.assertEquals(accsucc,"My Account","Login Error");
+	}	
 	
 	public void forgotPwdClick() {
 		this.driver.findElement(By.linkText("Forgotten Password")).click();
@@ -234,13 +228,10 @@ public class RegLoginPwdrecvPOM {
 	
 	public void verifyPwdRecoverSuccess() {
 		String pwdrecsuccmsg = this.pwdrecoversucc.getText().trim();
-		if(pwdrecsuccmsg.contains("An email with a confirmation link has been sent your email address.")) {
-			System.out.println("Test Pass");
-		} 
-		else {
-			System.out.println("Test Fail");
-			}
+		Assert.assertEquals(pwdrecsuccmsg,"An email with a confirmation link has been sent your email address.","Password Recovery Error");
 	}
+	
+	
 }
 
 

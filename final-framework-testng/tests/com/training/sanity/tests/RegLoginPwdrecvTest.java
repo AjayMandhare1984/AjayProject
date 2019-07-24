@@ -16,7 +16,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 
-public class SimpleTest {
+public class RegLoginPwdrecvTest {
 	private WebDriver driver; 
 	private String baseUrl; 
 	private RegLoginPwdrecvPOM Execution;
@@ -50,9 +50,9 @@ public class SimpleTest {
 		    try {
 		    Execution.accountMenuClick();
 		    Execution.registrationBtnClick();
-		    Execution.sendFirstnameInput("aaannn");
+		    Execution.sendFirstnameInput("aaaggg");
 		    Execution.sendLastnameInput("bbb");
-		    Execution.sendEmailInput("aaannn@c.com");
+		    Execution.sendEmailInput("aaaggg@c.com");
 		    Execution.sendTelephoneInput("123456789");
 		    Execution.sendAddress1Input("sss");
 		    Execution.sendAddress2Input("ggg");
@@ -77,7 +77,7 @@ public class SimpleTest {
 	public void loginPassTest() {
 		   try {
 		   Execution.accountMenuClick();
-		   Execution.sendLoginEmail("aaannn@c.com");
+		   Execution.sendLoginEmail("aaaggg@c.com");
 		   Execution.sendLoginPwd("qwer!12");
 		   Execution.loginClick();
 		   Execution.verifyLoginSuccess();
@@ -93,21 +93,23 @@ public class SimpleTest {
 	public void recoverPwdPassTest() {
 		   try {
 		   Execution.accountMenuClick();
-		   Execution.sendLoginEmail("aaannn@c.com");
+		   Execution.sendLoginEmail("aaaggg@c.com");
 		   Execution.sendLoginPwd("qwer!");
 		   Execution.loginClick();
 		   Execution.forgotPwdClick();
-		   Execution.sendEmailAddressInput("aaannn@c.com");
+		   Execution.sendEmailAddressInput("aaaggg@c.com");
 		   Execution.pwdRecoverContinueBtnClick();
 		   Execution.verifyPwdRecoverSuccess();
 		   screenShot.captureScreenShot("RecoverPassword");
 		   }
 		   catch(Exception e)
 		   {
-		    	System.out.println("recoverPwdPassTest" + e);
+		    	System.out.println("recoverPwdPassTest failed with exception" + e);
 		   }
 		
 	}
-	
 }
+	
+
+
 
