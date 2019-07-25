@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "Sample test Suite">
-   <test name = "Sample test">
+<suite name = "Retail test Suite">
+   <test name = "Simple test" exclude=true>
       <classes>
          <class name = "com.training.sanity.tests.RegLoginPwdrecvTest" />
+      </classes>
+   </test>
+   <test name = "Medium test">
+      <classes>
+         <class name = "com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest" />
       </classes>
    </test>
 </suite>

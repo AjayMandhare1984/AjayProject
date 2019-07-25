@@ -50,14 +50,14 @@ public class RegLoginPwdrecvTest {
 		    try {
 		    Execution.accountMenuClick();
 		    Execution.registrationBtnClick();
-		    Execution.sendFirstnameInput("aaaggg");
-		    Execution.sendLastnameInput("bbb");
-		    Execution.sendEmailInput("aaaggg@c.com");
+		    Execution.sendFirstnameInput("bbb");
+		    Execution.sendLastnameInput("jjj");
+		    Execution.sendEmailInput("bbbjjj@c.com");
 		    Execution.sendTelephoneInput("123456789");
 		    Execution.sendAddress1Input("sss");
 		    Execution.sendAddress2Input("ggg");
 		    Execution.sendCityInput("Pune");
-		    Execution.sendPostcodeInput("12341");
+		    Execution.sendPostcodeInput("412308");
 		    Execution.seletCountryInputInput();
 		    Execution.selectRegionStateInput();
 		    Execution.sendPasswordInput("qwer!12");

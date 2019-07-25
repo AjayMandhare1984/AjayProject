@@ -1,53 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="233243" started-at="2019-07-25T09:39:14Z" finished-at="2019-07-25T09:43:08Z">
+  <suite name="Default suite" duration-ms="146264" started-at="2019-08-02T11:31:47Z" finished-at="2019-08-02T11:34:13Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="233243" started-at="2019-07-25T09:39:14Z" finished-at="2019-07-25T09:43:08Z">
-      <class name="com.training.sanity.tests.RegLoginPwdrecvTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2019-07-25T15:09:14Z" finished-at="2019-07-25T15:09:14Z">
+    <test name="Default test" duration-ms="146264" started-at="2019-08-02T11:31:47Z" finished-at="2019-08-02T11:34:13Z">
+      <class name="com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest@71c7db30]" name="setUpBeforeClass" is-config="true" duration-ms="49" started-at="2019-08-02T17:01:47Z" finished-at="2019-08-02T17:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="setUp" is-config="true" duration-ms="60833" started-at="2019-07-25T15:09:14Z" finished-at="2019-07-25T15:10:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest@71c7db30]" name="setUp" is-config="true" duration-ms="27556" started-at="2019-08-02T17:01:47Z" finished-at="2019-08-02T17:02:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registrationPassTest()[pri:1, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="registrationPassTest" duration-ms="57916" started-at="2019-07-25T15:10:15Z" finished-at="2019-07-25T15:11:13Z">
+        <test-method status="PASS" signature="placeOrderPassTest()[pri:3, instance:com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest@71c7db30]" name="placeOrderPassTest" duration-ms="112747" started-at="2019-08-02T17:02:15Z" finished-at="2019-08-02T17:04:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationPassTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="tearDown" is-config="true" duration-ms="5734" started-at="2019-07-25T15:11:13Z" finished-at="2019-07-25T15:11:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="setUp" is-config="true" duration-ms="34327" started-at="2019-07-25T15:11:19Z" finished-at="2019-07-25T15:11:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPassTest()[pri:2, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="loginPassTest" duration-ms="27561" started-at="2019-07-25T15:11:53Z" finished-at="2019-07-25T15:12:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPassTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="tearDown" is-config="true" duration-ms="5691" started-at="2019-07-25T15:12:21Z" finished-at="2019-07-25T15:12:27Z">
+        </test-method> <!-- placeOrderPassTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest@71c7db30]" name="tearDown" is-config="true" duration-ms="5937" started-at="2019-08-02T17:04:08Z" finished-at="2019-08-02T17:04:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="setUp" is-config="true" duration-ms="17557" started-at="2019-07-25T15:12:27Z" finished-at="2019-07-25T15:12:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="recoverPwdPassTest()[pri:3, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="recoverPwdPassTest" duration-ms="17910" started-at="2019-07-25T15:12:44Z" finished-at="2019-07-25T15:13:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recoverPwdPassTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RegLoginPwdrecvTest@71c7db30]" name="tearDown" is-config="true" duration-ms="5690" started-at="2019-07-25T15:13:02Z" finished-at="2019-07-25T15:13:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RegLoginPwdrecvTest -->
-    </test> <!-- Sample test -->
-  </suite> <!-- Sample test Suite -->
+      </class> <!-- com.training.sanity.tests.InvalidLogWithoutLogPlaceOrderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
